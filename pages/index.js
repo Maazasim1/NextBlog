@@ -30,10 +30,7 @@ seeking challenging opportunity to further enhance and develop my
 skills. I am confident, creative & enthusiastic and enjoy taking
 up challenging tasks as well as work under pressure while delivering
 on time and within budget performance</p>
-        <p>
-          (This is a sample website - you’ll be building a site like this on{' '}
-          <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
-        </p>
+        
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Blog</h2>

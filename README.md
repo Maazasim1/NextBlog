@@ -1,1 +1,1 @@
-This is a starter template for [Learn Next.js](https://nextjs.org/learn).
+Access to live server website: https://next-blog-chi-tawny.vercel.app/
