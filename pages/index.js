@@ -4,6 +4,7 @@ import utilStyles from '../styles/utils.module.css';
 import { getSortedPostsData } from '../lib/posts';
 import Link from 'next/link';
 import Date from '../components/date';
+import BlogCard from '../components/blogCard';
 
 export async function getStaticProps(){
   const allPostsData = getSortedPostsData();
@@ -30,20 +31,17 @@ seeking challenging opportunity to further enhance and develop my
 skills. I am confident, creative & enthusiastic and enjoy taking
 up challenging tasks as well as work under pressure while delivering
 on time and within budget performance</p>
-        
+        ''
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Blog</h2>
-        <ul className={utilStyles.list}>
+        <ul className="grid grid-flow-col">
           {allPostsData.map(({ id, date, title }) => (
             <li className={utilStyles.listItem} key={id}>
-            <Link href={`/posts/${id}`}>
-              <a>{title}</a>
-            </Link>
+         
             <br />
-            <small className={utilStyles.lightText}>
-              <Date dateString={date} />
-            </small>
+
+            <BlogCard date={date} title={title} id={id}/>
           </li>
           ))}
         </ul>
