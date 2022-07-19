@@ -39,25 +39,29 @@ export default function Layout({ children, home }) {
             <h1 className={utilStyles.heading2Xl}>{name}</h1>
           </>
         ) : (
-          <>
+            <div className='w-[100%]'>
+
+          <div className='flex flex-row w-[100%]  items-center'>
             <Link href="/">
-              <a>
+              <a className='p-5'>
                 <Image
                   priority
                   src="/images/maazprofile.png"
                   className={utilStyles.borderCircle}
-                  height={108}
-                  width={108}
+                  height={50}
+                  width={50}
                   alt={name}
-                />
+                  />
               </a>
             </Link>
-            <h2 className={utilStyles.headingLg}>
+            <h2>
               <Link href="/">
                 <a className={utilStyles.colorInherit}>{name}</a>
               </Link>
             </h2>
-          </>
+          </div>
+            <hr className='border-gray-300 border-7 dark:border-gray-500'/>
+                  </div>
         )}
       </header>
       <main>{children}</main>

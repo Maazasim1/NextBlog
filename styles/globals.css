@@ -11,8 +11,8 @@ body {
     Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   line-height: 1.6;
   font-size: 18px;
-  background-color: rgb(0, 0, 20);
   color:black;
+  @apply dark:bg-slate-900;
   
 }
 
@@ -32,4 +32,16 @@ a:hover {
 img {
   max-width: 100%;
   display: block;
+}
+
+h1,h2,h3,h4{
+  @apply dark:text-white;
+}
+
+p{
+  @apply dark:text-slate-400;
+}
+
+a{
+  @apply dark:text-white !important;
 }

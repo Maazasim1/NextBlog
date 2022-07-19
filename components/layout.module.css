@@ -2,7 +2,7 @@
     
     padding: 20px 5rem;
     margin: 3rem 15rem 6rem;
-    background-color: white;
+    background-color: none;
     border-radius: 28px;
   }
   
@@ -21,7 +21,7 @@
         max-width: 36rem;
         padding: 20px 5rem;
         margin: 3rem auto 6rem;
-        background-color: white;
+        background-color: none;
         border-radius: 28px;
       }
       
