@@ -18,8 +18,8 @@
 
   @media only screen and (max-width: 600px) {
     .container {
-        max-width: 36rem;
-        padding: 20px 5rem;
+        max-width: 40rem;
+        padding: 10px 2rem;
         margin: 3rem auto 6rem;
         background-color: none;
         border-radius: 28px;

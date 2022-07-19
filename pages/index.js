@@ -22,7 +22,7 @@ export default function Home({allPostsData}) {
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>To obtain a position that allows me to utilize my skills in an
+        <p className='p-0'>To obtain a position that allows me to utilize my skills in an
 environment where they would be advantageous to both the
 client and myself. My commitment to perform quality work is
 my greatest asset. I have strong problem solving, critical thinking &
@@ -35,7 +35,7 @@ on time and within budget performance</p>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Blog</h2>
-        <ul className="grid grid-flow-col">
+        <ul className="grid sm:grid-flow-col grid-flow-row">
           {allPostsData.map(({ id, date, title }) => (
             <li className={utilStyles.listItem} key={id}>
          
